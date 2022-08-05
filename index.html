@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travel Destinations</title>
+  <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href=style.css />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://bulma.io/">
+          Home
+        </a>
+        <a class="navbar-item" href="https://bulma.io/">
+          Band
+        </a>
+        <a class="navbar-item" href="https://bulma.io/">
+          Tour
+        </a>
+        <a class="navbar-item" href="https://bulma.io/">
+          Contact
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="Search . . .">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <figure class="image">
+      <img src="https://i.pinimg.com/originals/01/31/33/0131338926792ca8a18b6ee44eff8d35.jpg">
+    </figure>
+  </section>
+
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title">Click the button for travel destination ideas!</h2>
+      <button class="button is-large is-danger is-light" id="button">Find destination!</button>
+
+      <div class="card hidden" id="France">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">France</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Italy">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Italy</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="UnitedStates">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">United States</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Mexico">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Mexico</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Greece">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4"> Greece </p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="China">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">China</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Russia">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Russia</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Korea">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Korea</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Brazil">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Brazil</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Ireland">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Ireland</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+      <div class="card hidden" id="Portugal">
+        <div class="card-image">
+          <!--
+                            <figure class="image is-1by2>
+                                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            </figure>
+                          -->
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Portugal</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Description of country
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title mb-4">What kind of Traveller are you?</h2>
+      <p class="title has-background-light mt-4"> What do you want to wear?</p>
+      <div id="row0" class="tile is-ancestor">
+
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="clothes-0" class="image">
+              <img src="https://cdn.pixabay.com/photo/2020/05/15/10/20/sweatpants-5173125_1280.jpg" alt="sweatpants">
+
+              <p class="title">Comfy sweats</p>
+            </figure>
+          </article>
+        </div>
+
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="clothes-1" class="image">
+              <img src="https://cdn.pixabay.com/photo/2018/02/15/10/12/african-american-3154855_1280.jpg"
+                alt="excercise cartoon">
+            
+            <p class="title">Excercise Outfit</p>
+</figure>
+          </article>
+        </div>
+
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="clothes-2" class="image">
+              <img src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593362_1280.jpg"
+                alt="business suit">
+
+              <p class="title">Business Casual</p>
+            </figure>
+          </article>
+        </div>
+
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="clothes-3" class="image">
+              <img src="https://cdn.pixabay.com/photo/2017/08/05/00/12/girl-2581913_1280.jpg" alt="tshirt and bags">
+
+              <p class="title">Ready to go out</p>
+            </figure>
+          </article>
+        </div>
+      </div>
+
+<p class="title has-background-light"> What do you want to eat?</p>
+      <div id="row1" class="tile is-ancestor hidden">
+        
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="food-0" class="image">
+              <img src="https://cdn.pixabay.com/photo/2019/07/21/01/36/tacos-al-pastor-4351813_1280.jpg" alt="tacos">
+
+              <p class="title">Tacos</p>
+            </figure>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="food-1" class="image">
+              <img src="https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg" alt="pizza">
+
+              <p class="title">Pizza</p>
+            </figure>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="food-2" class="image">
+              <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="burger">
+            
+            <p class="title">Burgers</p>
+              </figure>
+          </article>
+          
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure id="food-3" class="image">
+              <img src="https://cdn.pixabay.com/photo/2019/06/29/09/00/food-4305743_1280.jpg" alt="mac and cheese">
+
+              <p class="title">Mac and Cheese</p>
+            </figure>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Answer 1 (-, +) -->
+  <section id="relaxing-solo" class="section hidden">
+    <div class="container">
+      <h1 class="title">You are a relaxer!</h1>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <figure class="image card notification has-background-light is-inline-block">
+            <div class="container">
+              <img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg"
+                alt="calm pretty island" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Answer 2 (-, +) -->
+  <section id="relaxing-together" class="section hidden">
+    <div class="container">
+      <h1 class="title">You are a staycationer!</h1>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <figure class="image card notification has-background-light is-inline-block">
+            <div class="container">
+              <img src="https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg" alt="Houses" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Answer 2 (-, +) -->
+  <section id="exciting-solo" class="section hidden">
+    <div class="container">
+      <h1 class="title">You are a nomad!</h1>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <figure class="image card notification has-background-light is-inline-block">
+            <div class="container">
+              <img src="https://cdn.pixabay.com/photo/2017/08/10/22/31/sky-2628441_1280.jpg" alt="Hiker in mountains" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Answer 2 (-, +) -->
+  <section id="exciting-together" class="section hidden">
+    <div class="container">
+      <h1 class="title">You are an adventurer!</h1>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <figure class="image card notification has-background-light is-inline-block">
+            <div class="container">
+              <img src="https://cdn.pixabay.com/photo/2016/02/07/19/48/aurora-1185464_1280.jpg"
+                alt="2 people looking at northern lights" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title">Need help with your travel plans? Contact us</h2>
+
+      <form>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Name">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" placeholder="Message us"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary">
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-snapchat fa-2x"></i>
+          </a>
+        </p>
+        <p>
+          <a href="https://bulma.io">
+            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer> </script>
+</body>
+
+</html>
